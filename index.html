@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Império Variedades</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topo">
+    <div class="topo-area">
+      <div class="marca">
+        <img src="img/logo.png" class="logo" alt="Logo da Mercearia">
+        <span>Império Variedades</span>
+      </div>
+      <button id="botaoAbrirCarrinho" class="botaoCarrinho">🛒</button>
+    </div>
+  </header>
+
+  <!--área dos produtos-->
+  <div class="area">
+    <nav class="lateral" aria-label="Categorias">
+      <h4 class="tituloLateral">Categorias</h4>
+      <ul>
+        <li><button class="botaoCategoria ativa" onclick="filtrar('tudo', this)">Todos</button></li>
+        <li><button class="botaoCategoria" onclick="filtrar('limpeza', this)">Limpeza</button></li>
+        <li><button class="botaoCategoria" onclick="filtrar('comida', this)">Comida</button></li>
+        <li><button class="botaoCategoria" onclick="filtrar('bebida', this)">Bebidas</button></li>
+      </ul>
+    </nav>
+
+    <main class="principal">
+      <div class="intro">
+        <h2>Produtos Disponíveis</h2>
+        <p class="sub">Escolha os itens para adicionar ao carrinho</p>
+      </div>
+
+      <section id="listaProdutos" class="gradeProdutos"></section>
+    </main>
+
+  </div>
+
+  <!--carrinho-->
+  <aside id="painelCarrinho" class="painelCarrinho" aria-hidden="true">
+    <div class="cabecalhoCarrinho">
+      <h3>Lista de Compras</h3>
+      <button onclick="fecharCarrinho()" class="botaoCategoria">✕</button>
+    </div>
+
+    <div class="corpoCarrinho">
+      <ul id="itensCarrinho"></ul>
+    </div>
+
+    <div class="rodapeCarrinho">
+      <div id="totalCarrinho">Total: R$ 0.00</div>
+      <button class="botaoFinalizar" onclick="abrirPopup()">Finalizar Pedido</button>
+    </div>
+
+  </aside>
+
+  <!--popup-->
+  <div id="popupArea" class="popupArea">
+    <div class="caixaPopup">
+
+      <h3>Confirmar Pedido</h3>
+
+      <label for="nomeCliente">Seu nome:</label>
+      <input id="nomeCliente" type="text" placeholder="Digite seu nome" />
+
+      <div class="acoesPopup">
+        <button onclick="confirmarFinalizar()" class="botaoConfirmar">Confirmar</button>
+        <button onclick="fecharPopup()" class="botaoCancelar">Cancelar</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!--confirmação do pedido-->
+  <div id="mensagemFinal" class="mensagemFinal">
+    <div>✓ Pedido registrado com sucesso!</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

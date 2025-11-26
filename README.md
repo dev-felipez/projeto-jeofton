@@ -1,0 +1,1 @@
+Projeto acadêmico simples de um site para uma mercearia local, chamada de Império Variedades, desenvolvido usando apenas JavaScript, PHP, HTML e CSS, visando viabilizar a reserva de produtos da mercearia sem precisar ir lá, apenas realizando o pedido e indo buscar depois.
