@@ -1,0 +1,8 @@
+Data: 2025-11-26 03:21:26
+Cliente: Felipe
+Pedido: [{"id":1,"nome":"Água Sanitária","categoria":"limpeza","preco":6.5,"img":"img/256905-1.webp","qtd":2},{"id":2,"nome":"Desinfetante","categoria":"limpeza","preco":5.2,"img":"img/desinfetante-casa-e-perfume-roxo-sensualidad-500ml.jpg","qtd":2}]
+-------------------------
+Data: 2025-11-26 03:31:58
+Cliente: Felipe
+Pedido: [{"id":1,"nome":"Água Sanitária","categoria":"limpeza","preco":6.5,"img":"img/256905-1.webp","qtd":2},{"id":5,"nome":"Feijão","categoria":"comida","preco":8.7,"img":"img/Kicaldo-feijaocarioca.png","qtd":4},{"id":6,"nome":"Macarrão Espaguete","categoria":"comida","preco":10,"img":"img/6571bf24558925a4e8897fb2.webp","qtd":5}]
+-------------------------
